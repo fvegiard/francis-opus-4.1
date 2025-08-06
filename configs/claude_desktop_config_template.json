@@ -1,0 +1,155 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem"],
+      "env": {
+        "FILESYSTEM_ROOT": "C:\\"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "your_github_token_here"
+      }
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres"],
+      "env": {
+        "POSTGRES_CONNECTION_STRING": "postgresql://user:password@localhost:5432/dbname"
+      }
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
+    },
+    "git": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-git"]
+    },
+    "perplexity": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-perplexity"],
+      "env": {
+        "PERPLEXITY_API_KEY": "your_perplexity_key"
+      }
+    },
+    "time": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-time"]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "your_brave_api_key_here"
+      }
+    },
+    "desktop-commander": {
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "node",
+        "C:\\Users\\YOUR_USER\\AppData\\Roaming\\Claude\\Claude Extensions Store\\desktop-commander\\server.js"
+      ]
+    },
+    "sequential-thinking": {
+      "command": "python",
+      "args": [
+        "-m",
+        "sequential_thinking"
+      ],
+      "env": {
+        "PYTHONPATH": "/path/to/your/mcp-servers/sequential-thinking"
+      }
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp-server"],
+      "env": {
+        "FIRECRAWL_API_KEY": "your_firecrawl_key"
+      }
+    },
+    "exa": {
+      "command": "npx",
+      "args": ["-y", "exa-mcp-server"],
+      "env": {
+        "EXA_API_KEY": "your_exa_key"
+      }
+    },
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": "your_slack_token",
+        "SLACK_TEAM_ID": "your_team_id"
+      }
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-notion"],
+      "env": {
+        "NOTION_API_KEY": "your_notion_key"
+      }
+    },
+    "google-drive": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-google-drive"],
+      "env": {
+        "GOOGLE_DRIVE_CLIENT_ID": "your_client_id",
+        "GOOGLE_DRIVE_CLIENT_SECRET": "your_client_secret"
+      }
+    },
+    "google-maps": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-google-maps"],
+      "env": {
+        "GOOGLE_MAPS_API_KEY": "your_google_maps_api_key"
+      }
+    },
+    "everart": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-everart"],
+      "env": {
+        "EVERART_API_KEY": "your_everart_key"
+      }
+    },
+    "aws": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-aws"],
+      "env": {
+        "AWS_ACCESS_KEY_ID": "your_aws_key",
+        "AWS_SECRET_ACCESS_KEY": "your_aws_secret",
+        "AWS_REGION": "us-east-1"
+      }
+    },
+    "reddit": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-reddit"],
+      "env": {
+        "REDDIT_CLIENT_ID": "your_reddit_id",
+        "REDDIT_CLIENT_SECRET": "your_reddit_secret"
+      }
+    },
+    "sequential-thinking": {
+      "command": "/path/to/your/mcp-servers/sequential-thinking/.venv/bin/python",
+      "args": [
+        "-m",
+        "mcp_sequential_thinking.server"
+      ],
+      "cwd": "/path/to/your/mcp-servers/sequential-thinking"
+    },
+    "sequential-thinking-branches": {
+      "command": "node",
+      "args": [
+        "C:\\Path\\To\\Your\\mcp-servers\\sequential-thinking-branches\\index.js"
+      ]
+    }
+  }
+}
